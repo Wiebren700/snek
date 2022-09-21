@@ -1,32 +1,166 @@
 <html>
     <head>
+        <title>Scouting Snek Lijst</title>
     </head>
     <body>
-        <a href="wiebren700.github.io/prijslijst-smulpaap.pdf" target="_blank">Snek prijslijst</a>
+        <script>
+            function calculatePrice(myform){
+
+//Get selected data  
+var elt = document.getElementById("snack1Item");
+var snack1 = elt.options[elt.selectedIndex].value;
+  
+var elt = document.getElementById("snack2Item");
+var snack2 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack3Item");
+var snack3 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack4Item");
+var snack4 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack5Item");
+var snack5 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack1Item");
+var snack1 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack6Item");
+var snack6 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack7Item");
+var snack7 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack7Item");
+var snack7 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack8Item");
+var snack8 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack9Item");
+var snack9 = elt.options[elt.selectedIndex].value;
+
+var elt = document.getElementById("snack10Item");
+var snack10 = elt.options[elt.selectedIndex].value;
+  
+//convert data to integers
+snack1 = parseInt(snack1);
+snack2 = parseInt(snack2);
+snack3 = parseInt(snack3);
+snack4 = parseInt(snack4);
+snack5 = parseInt(snack5);
+snack6 = parseInt(snack6);
+snack7 = parseInt(snack7);
+snack8 = parseInt(snack8);
+snack9 = parseInt(snack9);
+snack10 = parseInt(snack10); 
+//calculate total value  
+var total = snack1+snack2+ snack3+ snack4+ snack5 +snack6 +snack7 +snack8 +snack9 +snack10; 
+  
+//print value to  PicExtPrice 
+document.getElementById("PicExtPrice").value=total;
+
+}
+        </script>
         <FORM Name="myform">
-            <SELECT NAME="memoryItem" onChange="calculatePrice()" id="memoryItem">
-            <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
-            <OPTION value="49">8 GB add $49</OPTION>
-            <OPTION value="98">12 GB add $98</OPTION>
-            <OPTION value="159">16 GB add $159</OPTION>
-            </SELECT>
+            
+            <div>
+                Snack 1:    
+                <SELECT NAME="snack1Item" onChange="calculatePrice()" id="snack1Item">
+                <OPTION value="0">Kies snack</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
 
-            <SELECT NAME="hddItem" onChange="calculatePrice()" id="hddItem">
-            <OPTION value="0">Select One Choice from List-HDD Upgrade</OPTION>
-            <OPTION value="109">1 TB HD add $109</OPTION>
-            <OPTION value="150">1.5 TB HD add $150</OPTION>
-            <OPTION value="199">2 TB HD add $199</OPTION>
-            <OPTION value="299">250 GB SSD add $299</OPTION>
-            </SELECT>
+            <div>
+                Snack 2:    
+                <SELECT NAME="snack2Item" onChange="calculatePrice()" id="snack2Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 3:    
+                <SELECT NAME="snack3Item" onChange="calculatePrice()" id="snack3Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 4:    
+                <SELECT NAME="snack4Item" onChange="calculatePrice()" id="snack4Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 5:    
+                <SELECT NAME="snack5Item" onChange="calculatePrice()" id="snack5Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 6:    
+                <SELECT NAME="snack6Item" onChange="calculatePrice()" id="snack6Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 7:    
+                <SELECT NAME="snack7Item" onChange="calculatePrice()" id="snack7Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 8:    
+                <SELECT NAME="snack8Item" onChange="calculatePrice()" id="snack8Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 9:    
+                <SELECT NAME="snack9Item" onChange="calculatePrice()" id="snack9Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
+            <div>
+                Snack 10:    
+                <SELECT NAME="snack10Item" onChange="calculatePrice()" id="snack10Item">
+                <OPTION value="0">Select One Choice from List-Memory Upgrade</OPTION>
+                <OPTION value="49">8 GB add $49</OPTION>
+                <OPTION value="98">12 GB add $98</OPTION>
+                <OPTION value="159">16 GB add $159</OPTION>
+                </SELECT>
+            </div>
 
-            <SELECT NAME="networkItem" onChange="calculatePrice()" id="networkItem">
-            <OPTION value="0">Select One Choice from List- Network Upgrade</OPTION>
-            <OPTION value="109">56K V90 or X2 Modem add $109</OPTION>
-            <OPTION value="79">10/100 NIC add $79</OPTION>
-            <OPTION value="279">Combo Modem and NIC add $279</OPTION>
-            </SELECT>
+                
         </FORM>
+        <div><button type="button" onclick="calculatePrice()">Calculate</button></div>
+        <div>Totaal bedrag [€]:<INPUT type="text" id="PicExtPrice" Size=14 readonly></div>
+
+        <div>Link naar de prijslijst: <a href="http://www.smulpaaproden.nl/snackbar/pdf/prijslijst-smulpaap.pdf" target="_blank">Snek prijslijst</a></div>
     </body>
-        <button type="button" onclick="calculatePrice()">Calculate</button>
-        The new calculated price:<INPUT type="text" id="PicExtPrice" Size=8 readonly>
 </html>
